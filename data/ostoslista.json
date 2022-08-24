@@ -1,0 +1,18 @@
+[
+  {
+    "nimi": "Pizza",
+    "hankittu": true
+  },
+  {
+    "nimi": "Kokis",
+    "hankittu": true
+  },
+  {
+    "nimi": "Sipsejä",
+    "hankittu": false
+  },
+  {
+    "nimi": "Leipää",
+    "hankittu": false
+  }
+]
