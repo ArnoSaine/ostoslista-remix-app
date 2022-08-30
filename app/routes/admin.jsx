@@ -1,11 +1,12 @@
 import { json } from "@remix-run/node";
 import { Form, Link, useLoaderData } from "@remix-run/react";
-import { haeOstoslista } from "~/api.server";
+import { haeOstoslista, päivitäOstoslista } from "~/api.server";
 
 export const action = async ({ request }) => {
   const formData = await request.formData();
   const values = Object.fromEntries(formData);
-  console.log(values);
+  päivitäOstoslista(values);
+
   return null;
 };
 
@@ -28,7 +29,8 @@ export default function Admin() {
               Nimi: <input name="nimi" defaultValue={ostos.nimi} />
             </label>{" "}
             <label>
-              Määrä: <input name="määrä" defaultValue={ostos.määrä} />
+              Määrä:{" "}
+              <input name="määrä" type="number" defaultValue={ostos.määrä} />
             </label>
             <input type="hidden" name="index" value={index} />
             <button>Tallenna</button>
