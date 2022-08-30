@@ -1,18 +1,22 @@
 [
   {
     "nimi": "Pizza",
+    "määrä": 2,
     "hankittu": true
   },
   {
-    "nimi": "Kokis",
+    "nimi": "Kokis, 0,33 l",
+    "määrä": 6,
     "hankittu": true
   },
   {
-    "nimi": "Sipsejä",
+    "nimi": "Sipsipussi",
+    "määrä": 1,
     "hankittu": false
   },
   {
     "nimi": "Leipää",
+    "määrä": 2,
     "hankittu": false
   }
 ]
